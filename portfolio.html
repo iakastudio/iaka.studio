@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — erreka</title>
+  <meta name="description" content="Portfolio de Lucas Valerdi — Surf, portrait, paysage, nature & texture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Karla:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2.5rem;
+      background: rgba(242,239,233,0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .portfolio-subnav {
+      position: sticky;
+      top: 72px;
+      z-index: 999;
+      display: flex;
+      gap: 2rem;
+      padding: 1rem 2.5rem;
+      background: rgba(242,239,233,0.98);
+      border-bottom: 1px solid var(--fog);
+      flex-wrap: wrap;
+    }
+    .portfolio-subnav a {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: lowercase;
+      color: var(--stone);
+      transition: color 0.3s ease;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+    .portfolio-subnav a:hover,
+    .portfolio-subnav a.active {
+      color: var(--charcoal);
+      border-bottom-color: var(--charcoal);
+    }
+    .portfolio-body {
+      padding-top: 120px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="nav-logo">erreka</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html" class="active">portfolio</a></li>
+      <li><a href="shoots.html">shoots</a></li>
+      <li><a href="tirages.html">tirages</a></li>
+      <li><a href="about.html">à propos</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </header>
+
+  <div class="portfolio-subnav">
+    <a href="#surf" class="active">surf</a>
+    <a href="#portrait">portrait</a>
+    <a href="#silhouette">silhouette</a>
+    <a href="#paysage">paysage</a>
+    <a href="#nature">nature & texture</a>
+  </div>
+
+  <div class="portfolio-body">
+
+    <section class="portfolio-section" id="surf">
+      <h2>surf</h2>
+      <div class="masonry">
+        <div class="masonry-item"><img src="images/surf-1.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-2.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-3.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-4.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-5.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-6.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-7.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-8.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/surf-9.jpg" alt="Surf" loading="lazy" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="portrait">
+      <h2>portrait</h2>
+      <div class="masonry">
+        <div class="masonry-item"><img src="images/portrait-1.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-2.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-3.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-4.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-5.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-6.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/portrait-7.jpg" alt="Portrait" loading="lazy" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="silhouette">
+      <h2>silhouette</h2>
+      <div class="masonry">
+        <div class="masonry-item"><img src="images/silhouette-1.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-2.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-3.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-4.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-5.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-6.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-7.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/silhouette-8.jpg" alt="Silhouette" loading="lazy" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="paysage">
+      <h2>paysage</h2>
+      <div class="masonry">
+        <div class="masonry-item"><img src="images/paysage-1.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-2.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-3.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-4.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-5.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-6.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-7.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-8.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-9.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-10.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-11.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-12.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-13.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-14.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-15.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-16.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-17.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-18.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/paysage-19.jpg" alt="Paysage" loading="lazy" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="nature">
+      <h2>nature & texture</h2>
+      <div class="masonry">
+        <div class="masonry-item"><img src="images/nature-1.jpg" alt="Nature" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/nature-2.jpg" alt="Nature" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="masonry-item"><img src="images/nature-3.jpg" alt="Nature" loading="lazy" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">fermer</button>
+    <img src="" alt="" id="lightbox-img" />
+  </div>
+
+  <footer>
+    <p>© 2025 Lucas Valerdi — erreka.studio</p>
+    <a href="https://instagram.com/erreka_studio" target="_blank">instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

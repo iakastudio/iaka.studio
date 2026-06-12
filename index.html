@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>erreka — Lucas Valerdi</title>
+  <meta name="description" content="Photographe basé au Pays Basque. Surf, portrait, éditorial. Shoots sur mesure et tirages signés en édition limitée." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Karla:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">erreka</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="shoots.html">shoots</a></li>
+      <li><a href="tirages.html">tirages</a></li>
+      <li><a href="about.html">à propos</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-image-wrap">
+      <img src="images/hero.jpg" alt="Côte atlantique, Pays Basque" class="hero-img" />
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Lucas Valerdi — Photographe</p>
+      <h1>Pays Basque.<br /><em>Surf, portrait,</em><br />éditorial.</h1>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p>
+      Photographe basé au Pays Basque, je travaille en lumière naturelle
+      sur des projets surf, portrait et éditorial.
+      Shoots sur mesure et tirages signés en édition limitée.
+    </p>
+  </section>
+
+  <!-- PORTFOLIO GRID PREVIEW -->
+  <section class="grid-preview">
+    <div class="grid-item">
+      <a href="portfolio.html#surf">
+        <img src="images/surf-1.jpg" alt="Photographie surf Pays Basque" />
+        <span>surf</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="portfolio.html#portrait">
+        <img src="images/portrait-1.jpg" alt="Photographie portrait Pays Basque" />
+        <span>portrait</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="portfolio.html#silhouette">
+        <img src="images/silhouette-1.jpg" alt="Photographie silhouette Pays Basque" />
+        <span>silhouette</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="portfolio.html#paysage">
+        <img src="images/paysage-1.jpg" alt="Photographie paysage Pays Basque" />
+        <span>paysage</span>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="portfolio.html#nature">
+        <img src="images/nature-1.jpg" alt="Photographie nature et texture" />
+        <span>nature & texture</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA TIRAGES -->
+  <section class="cta-tirages">
+    <div class="cta-inner">
+      <p class="cta-label">tirages signés</p>
+      <h2>Éditions limitées,<br />numérotées, imprimées<br />sur papier Fine Art.</h2>
+      <a href="tirages.html" class="btn">voir les tirages</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Lucas Valerdi — erreka.studio</p>
+    <a href="https://instagram.com/erreka_studio" target="_blank">instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirages — erreka</title>
+  <meta name="description" content="Tirages photo signés par Lucas Valerdi — éditions limitées, impression gérée à la main." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Karla:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">erreka</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="shoots.html">shoots</a></li>
+      <li><a href="tirages.html" class="active">tirages</a></li>
+      <li><a href="about.html">à propos</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="tirages-intro">
+    <h1>Tirages<br /><em>signés</em></h1>
+    <p>Chaque tirage est une édition limitée, numérotée et signée à la main.</p>
+
+<p>Papier Fine Art Baryta, encres pigmentaires longue conservation. Fait pour durer, fait pour être accroché.</p>
+
+<p>Pour commander un format ou une image qui n'est pas encore disponible ici, contactez-moi directement.</p>
+  </div>
+
+  <div class="tirages-grid" id="tirages-grid">
+
+    <div class="tirage-card">
+      <div class="tirage-card-img">
+        <img src="images/tirage-1.jpg" alt="Tirage 1" loading="lazy" />
+      </div>
+      <h3>Sans titre #1</h3>
+      <p class="tirage-meta">30×40 cm — édition 10 ex. — nous contacter</p>
+    </div>
+
+    <div class="tirage-card">
+      <div class="tirage-card-img">
+        <img src="images/tirage-2.jpg" alt="Tirage 2" loading="lazy" />
+      </div>
+      <h3>Sans titre #2</h3>
+      <p class="tirage-meta">30×40 cm — édition 10 ex. — nous contacter</p>
+    </div>
+
+    <div class="tirage-card">
+      <div class="tirage-card-img">
+        <img src="images/tirage-3.jpg" alt="Tirage 3" loading="lazy" />
+      </div>
+      <h3>Sans titre #3</h3>
+      <p class="tirage-meta">40×60 cm — édition 5 ex. — nous contacter</p>
+    </div>
+
+  </div>
+
+  <section class="intro" style="margin-top: 0;">
+    <p>Pour commander ou pour toute question sur les formats et les tarifs, <a href="contact.html" style="border-bottom: 1px solid var(--charcoal);">contactez-moi directement</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lucas Valerdi — erreka.studio</p>
+    <a href="https://instagram.com/erreka_studio" target="_blank">instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

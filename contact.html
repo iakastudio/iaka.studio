@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — erreka</title>
+  <meta name="description" content="Contacter Lucas Valerdi — shoots, tirages, collaboration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Karla:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">erreka</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="shoots.html">shoots</a></li>
+      <li><a href="tirages.html">tirages</a></li>
+      <li><a href="about.html">à propos</a></li>
+      <li><a href="contact.html" class="active">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-wrap">
+
+    <div class="contact-info">
+      <p>
+        Un projet en tête ?<br />
+        Une vague à ne pas manquer ?<br />
+        Parlons-en.
+      </p>
+      <a href="mailto:contact@erreka.studio">contact@erreka.studio</a>
+      <a href="https://instagram.com/errekastudio" target="_blank">@errekastudio</a>
+      <br />
+      <p style="font-size: 0.75rem; color: var(--stone); margin-top: 1.5rem; line-height: 1.6;">
+        Basé au Pays Basque.<br />
+        Disponible pour des projets en France et à l'international.
+      </p>
+    </div>
+
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+
+      <div class="field">
+        <label for="name">nom</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="type">type de projet</label>
+        <select id="type" name="type">
+          <option value="">—</option>
+          <option value="surf">shoot surf</option>
+          <option value="portrait">shoot portrait</option>
+          <option value="sport">shoot sport</option>
+          <option value="pro">shoot pro / corporate</option>
+          <option value="tirage">tirage signé</option>
+          <option value="autre">autre</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">message</label>
+        <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos dates, vos questions..."></textarea>
+      </div>
+
+      <button type="submit" class="btn" id="submit-btn">envoyer</button>
+
+      <p id="form-success" style="display:none; font-size: 0.8rem; color: var(--stone); margin-top: 1rem;">
+        Message envoyé — je reviens vers vous rapidement.
+      </p>
+      <p id="form-error" style="display:none; font-size: 0.8rem; color: #c0392b; margin-top: 1rem;">
+        Une erreur s'est produite. Écrivez-moi directement à contact@erreka.studio
+      </p>
+
+    </form>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Lucas Valerdi — erreka.studio</p>
+    <a href="https://instagram.com/erreka_studio" target="_blank">instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
