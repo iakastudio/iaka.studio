@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (type && select) {
     select.value = type;
   }
-  
+});
+
 // Protection images
 document.addEventListener('contextmenu', (e) => {
   if (e.target.tagName === 'IMG') {
