@@ -3,13 +3,16 @@
 // =====================
 function toggleMenu() {
   const links = document.getElementById('navLinks');
+  const toggle = document.querySelector('.nav-toggle');
   links.classList.toggle('open');
+  toggle.classList.toggle('is-open');
 }
 
 // Ferme le menu au clic sur un lien
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('navLinks').classList.remove('open');
+    document.querySelector('.nav-toggle').classList.remove('is-open');
   });
 });
 
