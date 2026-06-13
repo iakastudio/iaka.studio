@@ -659,15 +659,17 @@ form .field { display: flex; flex-direction: column; }
   nav { padding: 1.2rem 1.5rem; }
 
   .nav-links {
-    display: flex;
     position: fixed;
     inset: 0;
-    background: var(--cream);
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    background: #F2EFE9;
     z-index: 999;
+    overflow: visible;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -689,7 +691,11 @@ form .field { display: flex; flex-direction: column; }
     color: var(--charcoal);
   }
 
-  .nav-toggle { display: flex; z-index: 1001; }
+  .nav-toggle {
+    display: flex;
+    position: relative;
+    z-index: 1001;
+  }
 
   /* Hero */
   .hero-text { left: 1.5rem; bottom: 5rem; }
