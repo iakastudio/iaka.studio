@@ -191,8 +191,6 @@ nav::before {
   margin: calc(var(--spacing-xl) * 1.4) auto;
   padding: 0 2.5rem;
   text-align: center;
-  border-top: 1px solid var(--fog);
-  padding-top: calc(var(--spacing-xl) * 1.4);
 }
 
 .intro p {
@@ -259,10 +257,9 @@ nav::before {
    ===================== */
 .cta-tirages {
   margin: calc(var(--spacing-xl) * 1.4) 0;
-  padding: calc(var(--spacing-xl) * 1.4) 2.5rem 0;
+  padding: 0 2.5rem;
   display: flex;
   justify-content: center;
-  border-top: 1px solid var(--fog);
 }
 
 .cta-inner {
@@ -622,6 +619,23 @@ form .field { display: flex; flex-direction: column; }
   cursor: pointer;
   font-family: var(--ff-body);
   letter-spacing: 0.1em;
+}
+
+/* =====================
+   DESKTOP — ESPACEMENT RÉDUIT
+   ===================== */
+@media (min-width: 769px) {
+  .intro {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .cta-tirages {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .grid-preview {
+    margin-bottom: 0;
+  }
 }
 
 /* =====================
